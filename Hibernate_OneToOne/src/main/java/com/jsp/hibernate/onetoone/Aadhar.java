@@ -14,6 +14,7 @@ public class Aadhar {
 	@OneToOne(mappedBy = "aadhar")
 	private Person person;
 	
+	
 	public int getAadharId() {
 		return aadharId;
 	}

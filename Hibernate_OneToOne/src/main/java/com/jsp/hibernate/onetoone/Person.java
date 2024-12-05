@@ -1,6 +1,7 @@
 package com.jsp.hibernate.onetoone;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
@@ -11,7 +12,7 @@ public class Person {
 	private int personId;
 	private String personName;
 	
-	@OneToOne
+	@OneToOne(fetch = FetchType.EAGER)
 	private Aadhar aadhar;
 
 	public int getPersonId() {
